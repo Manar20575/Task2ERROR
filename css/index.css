@@ -1,0 +1,419 @@
+/* common in my page */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+h1, h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+/* Header */
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 1px solid #e7e7e7;
+    
+    justify-content: center;
+}
+.header .logo{
+    width:60%;
+    float: left;
+    margin-top: 8px;
+}
+.header .logo a{
+    padding: 15px;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 300;
+    color: rgba(255,255,255,.7);
+    letter-spacing: .5em;
+    text-decoration: none;
+}
+.header .icon{
+    color :rgba(255,255,255,.7);
+}
+.header .nav{
+    width: 40%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    float: left;
+}
+.header .nav li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    font-size: 15px;
+    text-align: center;
+}
+.header .nav > li > a.active:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #9acd32;
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+    -moz-transition: width 0.5s;
+    -ms-transition: width 0.5s;
+    -o-transition: width 0.5s;
+    margin-top: 2px;
+    }
+.header .nav > li > a:after{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 3px;
+    background-color: #9acd32;
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+    -moz-transition: width 0.5s;
+    -ms-transition: width 0.5s;
+    -o-transition: width 0.5s;
+    margin-top: 2px;
+}
+.header .nav > li > a:hover::after{
+    width: 100%;
+}
+.dropdown{
+position: relative;
+}
+.dropdown-menu{
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    top: 75%;
+    margin-left: 0px;
+    padding-left: 15px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    height: 50px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s , visibility 0.5;
+    -webkit-transition: opacity 0.5s , visibility 0.5;
+    -moz-transition: opacity 0.5s , visibility 0.5;
+    -ms-transition: opacity 0.5s , visibility 0.5;
+    -o-transition: opacity 0.5s , visibility 0.5;
+}
+.dropdown-menu li{
+    list-style: none;
+    text-align: start;
+    background-color: rgba(86, 88, 88, 0.192);
+}
+.dropdown-menu ul a{
+display: block;
+padding: 10px;
+font-size: 15px;
+}
+.dropdown:hover .dropdown-menu{
+    opacity: 1;
+    visibility: visible;
+}
+   /* 3.1- Home Section */
+   .home{
+       height: 100vh;
+       background: url(/images/header.jpg);
+       background-size: cover ;
+       position: relative;
+   }
+   .home .title{
+       color: white;
+       font-size: 100px;
+       font-weight: 300;
+       text-transform: capitalize;
+       margin-bottom: 15px;
+       width: 100%;
+   }
+   .home-info{
+     width: 65%;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform:translate(-50%, -50%) ;
+     -webkit-transform:translate(-50%, -50%) ;
+     -moz-transform:translate(-50%, -50%) ;
+     -ms-transform:translate(-50%, -50%) ;
+     -o-transform:translate(-50%, -50%) ;
+     text-align: center;
+   }
+   .home p{
+       letter-spacing: 2px;
+       line-height: 1.6;
+       font-weight: 300;
+       color: white;
+       margin-bottom: 15px;
+   }
+   .btn{
+    min-width: 150px;
+    padding: 15px 30px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 19px;
+    border-radius: 300px;
+    text-transform: uppercase;
+}
+.home .start{
+    margin-top: 35px;
+    margin-right: 10px;
+    background-color: #9acd32;
+    color: #fff;
+    padding: 20px;
+}
+/* Apple Sec*/
+.apple{
+    background-color: #9acd32;
+    padding: 70px 0;
+    text-align: center;
+    color: #fff;
+    margin: auto;
+}
+.apple_icon{
+color: #fff;
+}
+.apple_info{
+    text-align: center;
+    width: 68.5%;
+    padding: 0px 15px;
+    margin-left: 195px;
+    height: inherit;
+}
+.apple_info h2{
+    font-size: 28px;
+    font-weight: 400;
+}
+.apple_info p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: rgba(255,255,255,.7);
+
+}
+/* Best Sec */
+.best{
+    text-align: center;
+    display: flex;
+    padding: 100px 0;
+    margin-bottom: 20px;
+}
+.best_img img {
+    border-radius: 50%;
+    width: 100%;
+}
+.best_img{
+    width: 50%;
+    height: 370px;
+    padding: 0 15px;
+    padding: 0 15px;
+}
+.best_contant{
+    width: 45%;
+    font-weight: 500;
+    line-height: 1.1;
+    text-align: start;
+    margin-left: 15px;
+}
+.best_contant h2{
+font-size: 30px;
+font-weight: 400;
+}
+.best_contant p{
+    margin-bottom: 20px;
+    font-size: 21px;
+    color: #777;
+    font-weight: 300;
+}
+.btn{
+    border-radius: 300px;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid transparent;
+}
+.row {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.btnp{
+    padding: 15px 30px;
+}
+.best_contant button{
+    border-color: #9acd32;
+    color: #fff;
+    background-color: #9acd32;
+    font-size: 18px;
+    line-height: 1.3;
+}
+/* Best 2 */
+.best2{
+    text-align: center;
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 230px;
+    background-color: #222;
+    height: 550px;
+}
+.best2_img img {
+    border-radius: 50%;
+    width: 100%;
+}
+.best2_img{
+    width: 50%;
+    height: 370px;
+    padding: 0 15px;
+    padding: 0 15px;
+}
+.best2_contant{
+    width: 45%;
+    font-weight: 500;
+    line-height: 1.1;
+    text-align: start;
+    margin: auto;
+    color: #fff;
+}
+.best2_contant h2{
+font-size: 30px;
+font-weight: 400;
+}
+.best2_contant p{
+    margin-bottom: 20px;
+    font-size: 21px;
+    color: #777;
+    font-weight: 300;
+    color: rgba(255,255,255,.7);
+}
+.btn{
+    border-radius: 300px;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid transparent;
+}
+.row {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.btnp{
+    padding: 15px 30px;
+}
+.best2_contant button{
+    border-color: #fff;
+    color: #222;
+    background-color: #fff;
+    font-size: 18px;
+    line-height: 1.3;
+}
+/*fluid*/
+.items_fluid{
+    display: flex;
+}
+.item_fluid1, .item_fluid2, .item_fluid3{
+     height: 200px;
+    background-size: cover;
+    width: 33.3333333%;
+}
+.item_fluid1{
+    background-image: url(/images/writing.jpg);
+}
+.item_fluid2{
+    background-image: url(/images/concert.jpg);
+}
+.item_fluid3{
+    background-image: url(/images/pencil_sharpener.jpg);
+}
+.item_fluid1 a, .item_fluid2 a, .item_fluid3 a{
+    font-size: 40px;
+    vertical-align: middle;
+    color: #fff;
+    text-shadow: 0 0 40px #000;
+    text-decoration: none;
+    text-align: center;
+}
+.title_fluid1, .item_fluid2, .item_fluid3{
+    padding-top: 80px;
+}
+.title_fluid1 :hover .item_fluid1{
+    border: 8px solid rgba(173, 169, 169, 0.562);
+}
+/* check */
+.check{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 35px;
+}
+.icon{
+    color: #9acd32;
+}
+.check_header{
+font-size: 30px;
+font-weight: 400;
+line-height: 1.2;
+}
+.check_text{
+    color: #777;
+    font-size: 20px;
+    margin-bottom: 35px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-top: 10px;
+    padding: 0 25px;
+}
+.check_btn{
+    color: #fff;
+    background-color: #9acd32;
+    text-decoration: none;
+}
+/* footer */
+.footer{
+    background-color: #9acd32;
+    color: #fff;
+    margin-top: 50px;
+}
+.footer_info{
+    padding-top: 80px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: 400;
+}
+.footer p{
+    font-size: 22px;
+    font-weight: 300;
+}
+.footer .end{
+    padding-top: 10px;
+    padding-bottom: 80px;
+}
+.footer a{
+    color: #fff;
+    text-decoration: none;
+}
+.copy{
+    color: #222;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.5;
+}
