@@ -130,7 +130,7 @@ font-size: 15px;
    /* 3.1- Home Section */
    .home{
        height: 100vh;
-       background: url(../images/header.jpg);
+       background: url(/images/header.jpg);
        background-size: cover ;
        position: relative;
    }
@@ -335,13 +335,13 @@ font-weight: 400;
     width: 33.3333333%;
 }
 .item_fluid1{
-    background-image: url(../images/writing.jpg);
+    background-image: url(/images/writing.jpg);
 }
 .item_fluid2{
-    background-image: url(../images/concert.jpg);
+    background-image: url(/images/concert.jpg);
 }
 .item_fluid3{
-    background-image: url(../images/pencil_sharpener.jpg);
+    background-image: url(/images/pencil_sharpener.jpg);
 }
 .item_fluid1 a, .item_fluid2 a, .item_fluid3 a{
     font-size: 40px;
